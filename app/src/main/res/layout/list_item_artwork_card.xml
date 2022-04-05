@@ -27,7 +27,7 @@
             android:layout_height="@dimen/card_image_size"
             android:layout_gravity="center"
             android:scaleType="fitXY"
-            android:src="@drawable/madonna_child_banci" />
+            />
 
         <LinearLayout
             android:id="@+id/nameHolder"

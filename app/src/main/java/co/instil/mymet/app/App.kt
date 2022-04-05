@@ -3,9 +3,9 @@ package co.instil.mymet.app
 import android.app.Application
 import android.content.Context
 import co.instil.mymet.api.RemoteApi
-import co.instil.mymet.api.RemoteApiService
 import co.instil.mymet.api.buildApiService
 import co.instil.mymet.model.ArtStore
+
 
 private const val KEY_PREFERENCES = "myMet_preferences"
 private const val KEY_TOKEN = "token"

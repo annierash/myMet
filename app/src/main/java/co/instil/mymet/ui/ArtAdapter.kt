@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import co.instil.mymet.model.Art
 import co.instil.mymet.R
 import co.instil.mymet.app.inflate
+import coil.load
 
 
 class ArtAdapter(private val artWorks: MutableList<Art>) :
@@ -20,7 +21,10 @@ class ArtAdapter(private val artWorks: MutableList<Art>) :
             this.artwork = artwork
             val context = itemView.context
             val artworkImage = itemView.findViewById<ImageView>(R.id.artworkImage)
-            artworkImage.setImageResource(context.resources.getIdentifier(artwork.uri, null, context.packageName))
+            artworkImage.load(artwork.primaryImageSmall) {
+                crossfade(true)
+                placeholder(R.drawable.placeholder)
+            }
             itemView.findViewById<TextView>(R.id.title).text = artwork.title
             itemView.findViewById<TextView>(R.id.artist).text = artwork.artistDisplayName
         }

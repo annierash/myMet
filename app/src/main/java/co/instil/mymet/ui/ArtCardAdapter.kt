@@ -5,7 +5,6 @@ import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
@@ -15,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import co.instil.mymet.R
 import co.instil.mymet.app.inflate
 import co.instil.mymet.model.Art
+import coil.load
 
 class ArtCardAdapter(private val artWorks: MutableList<Art>) :
     RecyclerView.Adapter<ArtCardAdapter.ViewHolder>() {
@@ -37,8 +37,11 @@ class ArtCardAdapter(private val artWorks: MutableList<Art>) :
         fun bind(artwork: Art) {
             this.artwork = artwork
             val context = itemView.context
-            val imageResource = context.resources.getIdentifier(artwork.uri,null, context.packageName)
-            itemView.findViewById<ImageView>(R.id.artworkCardImage).setImageResource(imageResource)
+
+            itemView.findViewById<ImageView>(R.id.artworkCardImage).load(artwork.primaryImageSmall) {
+                crossfade(true)
+                placeholder(R.drawable.placeholder)
+            }
             itemView.findViewById<TextView>(R.id.artworkTitle).text = artwork.title
             itemView.findViewById<TextView>(R.id.artistCardName).text = artwork.artistDisplayName
 //            setBackgroundColors(context, imageResource)

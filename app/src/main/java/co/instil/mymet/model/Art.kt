@@ -14,12 +14,6 @@ data class Art(
     var isFavorite: Boolean = false) {
 
 
-    val uri: String
-        get() = "drawable/$primaryImageSmall"
-
-    val thumbnail: String
-        get() = "drawable/thumbnail_$primaryImageSmall"
-
 }
 
 

@@ -24,7 +24,7 @@
         android:layout_marginTop="@dimen/padding_half"
         android:layout_marginEnd="@dimen/padding_standard"
         android:layout_marginBottom="@dimen/padding_half"
-        android:textColor="@color/primaryLightColor"
+        android:textColor="@android:color/white"
         android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +42,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/artworkImage"
         app:layout_constraintTop_toBottomOf="@+id/title"
-        android:textColor="@color/primaryLightColor"
+        android:textColor="@android:color/white"
         tools:text="Artist" />
 
     <ImageView
