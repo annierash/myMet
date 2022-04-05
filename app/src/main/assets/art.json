@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "objectID": 435601,
+    "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ep/web-large/ep32.100.94.bw.R.jpg",
+    "image": "madonna_chila_banci",
+    "title": "Madonna and Child",
+    "artistDisplayName": "Ercole Banci",
+    "artistDisplayBio": "Italian, Bolognese, active early 16th century",
+    "medium": "Tempera on wood",
+    "objectDate": "",
+    "GalleryNumber": ""
+  },
+  {
+    "id": 2,
+    "objectID": 435602,
+    "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ep/web-large/DP135400.jpg",
+    "image": "madonna_chila_bardi",
+    "title": "Madonna and Child with Saints Philip and Agnes",
+    "artistDisplayName": "Donato de' Bardi",
+    "artistDisplayBio": "Italian, Lombard, active by 1426–died 1450/51",
+    "medium": "Tempera on wood, gold ground",
+    "objectDate": "ca. 1425–30",
+    "GalleryNumber": ""
+  },
+  {
+    "id": 3,
+    "objectID": 435603,
+    "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ep/web-large/ep81.1.656.R.jpg",
+    "image": "footman_sleeping",
+    "title": "A Footman Sleeping",
+    "artistDisplayName": "Charles Bargue",
+    "artistDisplayBio": "French, Paris 1825/26–1883 Paris",
+    "medium": "Oil on wood",
+    "objectDate": "1871",
+    "GalleryNumber": ""
+  },
+  {
+    "id": 4,
+    "objectID": 435604,
+    "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ep/web-large/DT240201.jpg",
+    "image": "bashi_bargue",
+    "title": "A Bashi-Bazouk",
+    "artistDisplayName": "Charles Bargue",
+    "artistDisplayBio": "French, Paris 1825/26–1883 Paris",
+    "medium": "Oil on canvas",
+    "objectDate": "1875",
+    "GalleryNumber": ""
+  },
+  {
+    "id": 5,
+    "objectID": 435607,
+    "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-20397-001.jpg",
+    "image": "life_of_christ",
+    "title": "Scenes from the Life of Christ",
+    "artistDisplayName": "Giovanni Baronzio",
+    "artistDisplayBio": "Italian, active in Romagna and the Marches, second quarter 14th century",
+    "medium": "Tempera on canvas, transferred from wood, gold ground",
+    "objectDate": "ca. 1790",
+    "GalleryNumber": ""
+  },
+  {
+    "id": 6,
+    "objectID": 435620,
+    "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ep/web-large/EP588.jpg",
+    "image": "lamentation_entombment",
+    "title": "The Lamentation and the Entombment",
+    "artistDisplayName": "Bartolomeo di Tommaso",
+    "artistDisplayBio": "Italian, Umbrian, active by 1425–died 1453/54",
+    "medium": "Tempera on wood, gold ground",
+    "objectDate": "ca. 1445–50",
+    "GalleryNumber": ""
+  },
+  {
+    "id": 7,
+    "objectID": 435621,
+    "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-14201-049.jpg",
+    "image": "joan_of_arc",
+    "title": "Joan of Arc",
+    "artistDisplayName": "Jules Bastien-Lepage",
+    "artistDisplayBio": "French, Damvillers 1848–1884 Paris",
+    "medium": "Oil on canvas",
+    "objectDate": "1879",
+    "GalleryNumber": "800"
+  },
+  {
+    "id": 8,
+    "objectID": 435622,
+    "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ep/web-large/DT1571.jpg",
+    "image": "diana_and_cupid",
+    "title": "Diana and Cupid",
+    "artistDisplayName": "Pompeo Batoni",
+    "artistDisplayBio": "Italian, Lucca 1708–1787 Rome",
+    "medium": "Oil on canvas",
+    "objectDate": "1761",
+    "GalleryNumber": "800"
+  },
+  {
+    "id": 9,
+    "objectID": 435623,
+    "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ep/web-large/DT4577.jpg",
+    "image": "batoni_young_man",
+    "title": "Portrait of a Young Man",
+    "artistDisplayName": "Pompeo Batoni",
+    "artistDisplayBio": "Italian, Lucca 1708–1787 Rome",
+    "medium": "Oil on canvas",
+    "objectDate": "ca. 1760–65",
+    "GalleryNumber": "620"
+  },
+  {
+    "id": 10,
+    "objectID": 435626,
+    "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-17243-001.jpg",
+    "image": "aigues_mortes",
+    "title": "Porte de la Reine at Aigues-Mortes",
+    "artistDisplayName": "Jean-Frédéric Bazille",
+    "artistDisplayBio": "French, Montpellier 1841–1870 Beaune-la-Rolande",
+    "medium": "Oil on canvas",
+    "objectDate": "1867",
+    "GalleryNumber": ""
+  }
+]
