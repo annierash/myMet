@@ -49,6 +49,10 @@ object Favorites {
         sharedPrefs(context).edit().putString(key, json).apply()
     }
 
+    fun saveFavorites(list:List<Int>, context: Context) {
+        saveFavorites(KEY_FAVORITES, list, context)
+    }
+
     private fun sharedPrefs(context: Context) =
         PreferenceManager.getDefaultSharedPreferences(context)
 }

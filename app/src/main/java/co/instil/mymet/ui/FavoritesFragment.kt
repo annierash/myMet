@@ -6,15 +6,18 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import co.instil.mymet.R
 import co.instil.mymet.model.ArtStore
+import co.instil.mymet.ui.utils.ItemDragListener
+import co.instil.mymet.ui.utils.ItemTouchHelperCallback
 
-class FavoritesFragment : Fragment() {
+class FavoritesFragment : Fragment(), ItemDragListener {
 
-    private val adapter = ArtAdapter(mutableListOf())
-
+    private val adapter = ArtAdapter(mutableListOf(), this)
+    private lateinit var itemTouchHelper: ItemTouchHelper
 
     companion object {
         fun newInstance(): FavoritesFragment {
@@ -35,6 +38,7 @@ class FavoritesFragment : Fragment() {
                 )
             )
         }
+        setupItemTouchHelper()
     }
 
 
@@ -55,5 +59,15 @@ class FavoritesFragment : Fragment() {
             }
         }
     }
+
+    override fun onItemDrag(viewHolder: RecyclerView.ViewHolder) {
+        itemTouchHelper.startDrag(viewHolder)
+    }
+
+    private fun setupItemTouchHelper() {
+        itemTouchHelper = ItemTouchHelper(ItemTouchHelperCallback(adapter))
+        itemTouchHelper.attachToRecyclerView(view?.findViewById(R.id.favoriteRecyclerView))
+    }
+
 }
 
