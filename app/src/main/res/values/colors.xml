@@ -3,10 +3,12 @@
   <color name="primaryColor">#e4002b</color>
   <color name="primaryLightColor">#ff5555</color>
   <color name="primaryDarkColor">#a90003</color>
-  <color name="primaryTextColor">#ffffff</color>
+  <color name="primaryTextColor">#CC6E5A</color>
   <color name="secondaryColor">#b7527c</color>
   <color name="secondaryLightColor">#ec82ab</color>
   <color name="secondaryDarkColor">#842250</color>
   <color name="secondaryTextColor">#ffffff</color>
   <color name="black">#000000</color>
+  <color name="white">#ffffff</color>
+
 </resources>

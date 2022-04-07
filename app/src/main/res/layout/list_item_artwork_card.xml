@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardCornerRadius="@dimen/card_corner_radius"
-    app:cardElevation="3dp">
+    app:cardElevation="3dp"
+    android:layout_margin="3dp"
+    >
 
     <LinearLayout
         android:id="@+id/cardRipple"
@@ -25,6 +27,7 @@
             android:id="@+id/artworkCardImage"
             android:layout_width="@dimen/card_image_size"
             android:layout_height="@dimen/card_image_size"
+            android:contentDescription="Art Image"
             android:layout_gravity="center"
             android:scaleType="fitXY"
             />
@@ -35,8 +38,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:alpha="0.9"
-            android:background="?android:colorBackground"
-            android:orientation="horizontal">
+            android:background="@color/white"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/artworkTitle"
@@ -44,10 +47,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:gravity="center_horizontal"
-                android:maxLines="3"
-                android:padding="@dimen/padding_half"
-                android:textColor="@android:color/white"
-                android:textSize="15sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="4dp"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="8sp"
                 android:textStyle="bold"
                 tools:text="Title"
                 />
@@ -59,10 +63,10 @@
                 android:layout_gravity="center_vertical"
                 android:gravity="center_horizontal"
                 android:maxLines="1"
-                android:padding="@dimen/padding_half"
-                android:textColor="@android:color/white"
-                android:textSize="20sp"
-                android:textStyle="bold"
+                android:layout_margin="2dp"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="8sp"
+                android:textStyle="italic"
                 tools:text="First Last"/>
 
         </LinearLayout>

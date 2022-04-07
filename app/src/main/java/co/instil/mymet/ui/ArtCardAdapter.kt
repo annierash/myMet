@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.palette.graphics.Palette
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import co.instil.mymet.R
 import co.instil.mymet.app.inflate
@@ -26,11 +27,12 @@ class ArtCardAdapter(private val artWorks: MutableList<Art>) :
     var scrollDirection = ScrollDirection.DOWN
     var customSpanSize = 2
 
-    inner class ViewHolder(itemView: View) : View.OnClickListener, RecyclerView.ViewHolder(itemView) {
+    inner class ViewHolder(itemView: View) : View.OnClickListener,
+        RecyclerView.ViewHolder(itemView) {
 
         private lateinit var artwork: Art
 
-        init{
+        init {
             itemView.setOnClickListener(this)
         }
 
@@ -38,16 +40,17 @@ class ArtCardAdapter(private val artWorks: MutableList<Art>) :
             this.artwork = artwork
             val context = itemView.context
 
-            itemView.findViewById<ImageView>(R.id.artworkCardImage).load(artwork.primaryImageSmall) {
-                crossfade(true)
-                placeholder(R.drawable.placeholder)
-            }
+            itemView.findViewById<ImageView>(R.id.artworkCardImage)
+                .load(artwork.primaryImageSmall) {
+                    crossfade(true)
+                    placeholder(R.drawable.placeholder)
+                }
             itemView.findViewById<TextView>(R.id.artworkTitle).text = artwork.title
             itemView.findViewById<TextView>(R.id.artistCardName).text = artwork.artistDisplayName
-//            setBackgroundColors(context, imageResource)
+            //setBackgroundColors(context, R.id.artworkCardImage)
         }
 
-        override fun onClick(view:View?) {
+        override fun onClick(view: View?) {
             view?.let {
                 val context = it.context
                 val intent = ArtActivity.newIntent(context, artwork.id)
@@ -98,6 +101,11 @@ class ArtCardAdapter(private val artWorks: MutableList<Art>) :
     override fun getItemCount() = artWorks.size
 
     fun spanSizeAtPosition(position: Int): Int {
+//        return if (artWorks[position] % 2 == 0) {
+//            customSpanSize
+//        } else {
+//            return 1
+//        }
         return 1
     }
 
